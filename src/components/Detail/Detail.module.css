@@ -1,0 +1,47 @@
+.detailContainer {
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./../../images/da5d9223f42f44be980e0ea50853824e.jpg');
+  }
+  
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .status {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .species {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .gender {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .origin {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  

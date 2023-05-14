@@ -1,0 +1,38 @@
+.favoritesContainer {
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .favoritesContainer div {
+    margin-bottom: 16px;
+  }
+  
+  .favoritesContainer select {
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .favoritesContainer select:last-child {
+    margin-right: 0;
+  }
+  
+  .favoritesContainer .card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .favoritesContainer .card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .favoritesContainer .card p {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
