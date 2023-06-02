@@ -9,6 +9,12 @@ export default function SearchBar(props) {
   const handleChange = (e) => {
     setId(e.target.value);
   };
+  function handleSearch(event){
+    id >= 827
+    ? window.alert('El id no existe!')
+    : onSearch(id)
+     setId('')
+ };
 
   return (
     <div className={styles.wrapperSearch}>
@@ -20,9 +26,9 @@ export default function SearchBar(props) {
       />
       <button
         className={styles.btn}
-        onClick={() => {
-          onSearch(id);
-        }}
+        onClick= {handleSearch} 
+          
+        
       >
         Search
       </button>

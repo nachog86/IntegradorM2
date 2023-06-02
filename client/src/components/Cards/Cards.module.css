@@ -1,69 +1,22 @@
-.wrapperCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10px;
-  }
-  
-  .cardImage {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .cardDetail {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
-  }
-  
-  .cardButtons {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .cardButtons button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: #fff;
-  }
-  
-  .cardButtons button:hover {
-    color: #f2f2f2;
-  }
-  
-  .name {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .details {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .details h2 {
-    margin-right: 10px;
-    font-size: 14px;
-    color: #555;
-  }
-  
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: calc(25% - 20px); /* Ajusta el ancho de la tarjeta según tus necesidades */
+  margin: 10px;
+  /* Otros estilos de diseño de la tarjeta */
+}
+
+.card.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajusta el estilo de superposición según tus necesidades */
+  z-index: 1;
+}
+
+
+

@@ -15,40 +15,54 @@ const Form = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     login(userData);
-  };
+  }
 
   return (
-    <div>
-    <form className = {styles.form} onSubmit={handleSubmit}>
-      {/* USERNAME */}
-      <label htmlFor="">Email</label>
-      <input
-        type="text"
-        placeholder="Email..."
-        name="email"
-        onChange={handleChange}
-        value={userData.email} />
-      {errors.e1 ? (
-        <p>{errors.e1}</p>
-      ) : errors.e2 ? (
-        <p>{errors.e2}</p>
-      ) : (
-        <p>{errors.e3}</p>
-      )}
-
-      {/* PASSWORD */}
-      <label htmlFor="">Password</label>
-      <input
-        type="password"
-        placeholder="Password..."
-        name="password"
-        onChange={handleChange}
-        value={userData.password} />
-      {errors.p1 ? <p>{errors.p1}</p> : <p>{errors.p2}</p>}
-      <button className = {styles.button}> LOGIN</button>
-    </form>
-  </div>
-);
-}
+    <div className={styles.container}>
+      <div className={styles.box}>
+        <div className={styles.form}>
+          <h2>Sign in</h2>
+          <div className={styles.inputBox}>
+            <input
+              type="text"
+              placeholder="Email..."
+              name="email"
+              onChange={handleChange}
+              value={userData.email}
+            />
+            <span>Email</span>
+            <i></i>
+          </div>
+          {errors.e1 && <p>{errors.e1}</p>}
+          {errors.e2 && <p>{errors.e2}</p>}
+          {errors.e3 && <p>{errors.e3}</p>}
+          <div className={styles.inputBox}>
+            <input
+              type="password"
+              placeholder="Password..."
+              name="password"
+              onChange={handleChange}
+              value={userData.password}
+            />
+            <span>Password</span>
+            <i></i>
+          </div>
+          {errors.p1 && <p>{errors.p1}</p>}
+          {errors.p2 && <p>{errors.p2}</p>}
+          <div className={styles.links}>
+            <a href="/">Forgot Password</a>
+            <a href="/">Signup</a>
+          </div>
+          <input
+            type="submit"
+            value="Login"
+            className={styles.button}
+            onClick={handleSubmit}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Form;
