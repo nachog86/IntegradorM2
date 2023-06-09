@@ -13,8 +13,8 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Detail from './components/Detail/Detail';
 import Favorites from './components/Favorites/Favorites';
 
-// const email = 'gomezignacio86@gmail.com';
-// const password = 'usuario12';
+const email = 'gomezignacio86@gmail.com';
+const password = 'usuario12';
 
 
 function App() {
@@ -25,9 +25,8 @@ function App() {
 
 
    useEffect(() => {
-      if(!access){
-         navigate('/')}
-   }, [access, navigate]);
+      !access && navigate('/');
+   }, [access]);
 
    // const onSearch = (id) => {
    //    axios(`http://localhost:3001/rickandmorty/character/${id} `).then(({ data }) => {
